@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     outline: 0;
+    font-size: calc(9px + (18 - 9) * (100vw - 180px) / (1280 - 180)); 
   }
   
   body {
@@ -9,4 +10,5 @@
     font-family: 'Open sans', sans-serif;
     font-size: 1.3em;
     line-height: 1.5em;
+    font-size: calc(9px + (18 - 9) * (100vw - 180px) / (1280 - 180)); 
   }
