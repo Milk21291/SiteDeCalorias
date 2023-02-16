@@ -4,12 +4,15 @@ form.addEventListener('submit', function (e) {
     e.preventDefault();
 
         const inputKm = document.getElementById('km');
+        const inputHoras = document.getElementById('horas')
         const inputPeso = document.getElementById('peso');
         const resultado = document.getElementById('resultado')
         const km = Number(inputKm.value)
+        const horas = Number(inputHoras.value)
         const peso = Number(inputPeso.value)
         const calculo = km * peso * 0.0175
-        const caloriasPorHoras = calculo * 60
+        const horasParaMinutos = horas * 60
+        const caloriasPorHoras = calculo * horasParaMinutos
         console.log(caloriasPorHoras.toFixed(2))
         const soma = caloriasPorHoras / 909.9
         const pesoAtual = peso - soma
