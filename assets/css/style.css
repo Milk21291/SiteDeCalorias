@@ -60,6 +60,11 @@
     background: var(--primary-color-clearer);
   }
 
+  h1 {
+    font-size: 2em;
+    text-align: center;
+  }
+
   #resultado, .bad{
     background: rgb(109, 255, 182);
     padding: 10px 20px;
