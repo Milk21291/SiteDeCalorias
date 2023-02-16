@@ -9,6 +9,10 @@ form.addEventListener('submit', function (e) {
         const km = Number(inputKm.value)
         const peso = Number(inputPeso.value)
         const calculo = km * peso * 0.0175
-        resultado.innerHTML = `${calculo.toFixed(4)} calorias perdidas`
-        console.log(`${calculo.toFixed(4)} calorias perdidas`)
+        const caloriasPorHoras = calculo * 60
+        console.log(caloriasPorHoras.toFixed(2))
+        const soma = caloriasPorHoras / 909.9
+        const pesoAtual = peso - soma
+        resultado.innerHTML = `${calculo.toFixed(2)} calorias perdidas. Peso atual de ${peso}kg para ${pesoAtual.toFixed(2)}kg`
+        console.log(`${calculo.toFixed(2)} calorias perdidas. Peso atual de ${peso}kg para ${pesoAtual.toFixed(2)}kg`)
 });
